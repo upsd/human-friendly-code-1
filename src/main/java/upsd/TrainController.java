@@ -14,14 +14,19 @@ public class TrainController {
         String[] commands = input.split("");
 
         for (String c : commands) {
-            if (c.equals(FORWARD)) {
-                position += 1;
-            }
-            if (c.equals(BACKWARD)) {
-                position -= 1;
-            }
+            move(c);
         }
 
         return String.valueOf(position);
+    }
+
+    private void move(String command) {
+        if (command.equals(FORWARD)) {
+            position += 1;
+        }
+
+        if (command.equals(BACKWARD)) {
+            position -= 1;
+        }
     }
 }
