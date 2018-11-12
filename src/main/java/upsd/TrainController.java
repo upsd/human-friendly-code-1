@@ -22,11 +22,15 @@ public class TrainController {
 
     private void move(String command) {
         if (command.equals(FORWARD)) {
-            position += 1;
+            moveBy(1);
         }
 
         if (command.equals(BACKWARD)) {
-            position -= 1;
+            moveBy(-1);
         }
+    }
+
+    private void moveBy(int space) {
+        position += space;
     }
 }
