@@ -18,7 +18,8 @@ class TrainControllerShould {
             "3, 'FFF', 6",
             "2, 'B', 1",
             "4, 'BB', 2",
-            "5, 'BBB', 2"
+            "5, 'BBB', 2",
+            "2, 'FFB', 3"
     })
     void move_train(int initialPosition, String input, String expectedPosition) {
         TrainController controller = new TrainController(initialPosition);
