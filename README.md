@@ -18,5 +18,5 @@ The program is built to simulate commands being sent to a train, and reporting t
 `Then` the train is at position "3"
 
 ## How it was refactored
-See the commits for how an original solution was reached, and how it was refactored into a much more human-friendly
-solution.
+See [this branch](https://github.com/upsd/human-friendly-code-1/tree/original-code) for how an original solution was
+reached, and how it was refactored into a much more human-friendly solution.
