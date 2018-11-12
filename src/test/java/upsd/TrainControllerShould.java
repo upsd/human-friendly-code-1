@@ -11,7 +11,9 @@ class TrainControllerShould {
     @ParameterizedTest
     @CsvSource({
             "1, '', 1",
-            "2, '', 2"
+            "2, '', 2",
+            "1, 'F', 2",
+            "3, 'F', 4"
     })
     void move_train(int initialPosition, String input, String expectedPosition) {
         TrainController controller = new TrainController(initialPosition);

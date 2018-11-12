@@ -9,6 +9,9 @@ public class TrainController {
     }
 
     public String execute(String input) {
+        if (input.equals("F")) {
+            return String.valueOf(initialPosition + 1);
+        }
         return String.valueOf(initialPosition);
     }
 }
