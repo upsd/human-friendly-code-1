@@ -15,6 +15,9 @@ public class TrainController {
             if (c.equals("F")) {
                 initialPosition += 1;
             }
+            if (c.equals("B")) {
+                initialPosition -= 1;
+            }
         }
 
         return String.valueOf(initialPosition);
