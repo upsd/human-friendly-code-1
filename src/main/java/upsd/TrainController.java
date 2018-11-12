@@ -12,13 +12,17 @@ public class TrainController {
     }
 
     public String execute(String input) {
-        String[] commands = input.split("");
+        String[] commands = commandsFrom(input);
 
         for (String c : commands) {
             move(c);
         }
 
         return String.valueOf(position);
+    }
+
+    private String[] commandsFrom(String input) {
+        return input.split("");
     }
 
     private void move(String command) {
