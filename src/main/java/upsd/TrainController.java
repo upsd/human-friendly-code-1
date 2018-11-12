@@ -4,10 +4,10 @@ public class TrainController {
 
     private final String BACKWARD = "B";
     private final String FORWARD = "F";
-    private int initialPosition;
+    private int position;
 
     public TrainController(int initialPosition) {
-        this.initialPosition = initialPosition;
+        this.position = initialPosition;
     }
 
     public String execute(String input) {
@@ -15,13 +15,13 @@ public class TrainController {
 
         for (String c : commands) {
             if (c.equals(FORWARD)) {
-                initialPosition += 1;
+                position += 1;
             }
             if (c.equals(BACKWARD)) {
-                initialPosition -= 1;
+                position -= 1;
             }
         }
 
-        return String.valueOf(initialPosition);
+        return String.valueOf(position);
     }
 }
