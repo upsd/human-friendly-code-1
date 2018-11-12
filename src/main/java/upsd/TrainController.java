@@ -2,6 +2,7 @@ package upsd;
 
 public class TrainController {
 
+    private final int ONE_MILE = 1;
     private final String BACKWARD = "B";
     private final String FORWARD = "F";
     private int position;
@@ -22,15 +23,15 @@ public class TrainController {
 
     private void move(String command) {
         if (command.equals(FORWARD)) {
-            moveBy(1);
+            moveBy(ONE_MILE);
         }
 
         if (command.equals(BACKWARD)) {
-            moveBy(-1);
+            moveBy(-ONE_MILE);
         }
     }
 
-    private void moveBy(int space) {
-        position += space;
+    private void moveBy(int miles) {
+        position += miles;
     }
 }
