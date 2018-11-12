@@ -12,9 +12,8 @@ public class TrainController {
     }
 
     public String execute(String input) {
-        String[] commands = commandsFrom(input);
 
-        for (String c : commands) {
+        for (String c : commandsFrom(input)) {
             move(c);
         }
 
