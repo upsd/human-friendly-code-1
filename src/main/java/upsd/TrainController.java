@@ -2,6 +2,8 @@ package upsd;
 
 public class TrainController {
 
+    private final String BACKWARD = "B";
+    private final String FORWARD = "F";
     private int initialPosition;
 
     public TrainController(int initialPosition) {
@@ -12,10 +14,10 @@ public class TrainController {
         String[] commands = input.split("");
 
         for (String c : commands) {
-            if (c.equals("F")) {
+            if (c.equals(FORWARD)) {
                 initialPosition += 1;
             }
-            if (c.equals("B")) {
+            if (c.equals(BACKWARD)) {
                 initialPosition -= 1;
             }
         }
