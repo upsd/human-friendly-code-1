@@ -13,7 +13,8 @@ class TrainControllerShould {
             "1, '', 1",
             "2, '', 2",
             "1, 'F', 2",
-            "3, 'F', 4"
+            "3, 'F', 4",
+            "2, 'FF', 4"
     })
     void move_train(int initialPosition, String input, String expectedPosition) {
         TrainController controller = new TrainController(initialPosition);

@@ -9,9 +9,14 @@ public class TrainController {
     }
 
     public String execute(String input) {
-        if (input.equals("F")) {
-            return String.valueOf(initialPosition + 1);
+        String[] commands = input.split("");
+
+        for (String c : commands) {
+            if (c.equals("F")) {
+                initialPosition += 1;
+            }
         }
+
         return String.valueOf(initialPosition);
     }
 }
