@@ -23,3 +23,6 @@ reached, and how it was refactored into a much more human-friendly solution.
 
 Take a look at the [commits](https://github.com/upsd/human-friendly-code-1/commits/master) for more detail on the steps
 taken to refactor the original solution.
+
+N.B. You cannot change the public interface of this code. Any refactoring must not change the observable behaviour of
+the code.
